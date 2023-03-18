@@ -193,6 +193,7 @@ body {
   background-color: #fff;
   border-radius: 15px;
   width: 210px;
+  border: 2px solid #fff;
 }
 .tools__block-item-off {
   padding: 17px 0;
@@ -210,4 +211,119 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.projects {
+  padding-top: 370px;
+}
+.projects__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.projects__blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.projects__block-item {
+  padding: 30px 32px 0px 52px;
+  background: #fff;
+  height: 210px;
+  max-width: 420px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+.projects__block-item_title {
+  margin-right: 37px;
+  transition: 0.3s all ease-in-out;
+}
+.projects__block-item_title-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a273a;
+  transition: 0.3s all ease-in-out;
+}
+.projects__block-item_progres-side {
+  border: 1px solid #1a273a;
+}
+.projects__block-item_progres-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 13px;
+  color: #1a273a;
+  margin-bottom: 5px;
+}
+.projects__block-item_desription {
+  margin-top: 40px;
+}
+.projects__block-item_description-p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+.projects__block-item_description-l {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  line-height: 20px;
+  color: #000000;
+}
+.projects__block-item-flex {
+  display: flex;
+  align-items: center;
+}
+
+.progress-bg {
+  background: #e6e9ed;
+  position: relative;
+  height: 8px;
+  width: 155px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  overflow: hidden;
+  background: #ac92ec;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress-bar:after {
+  background-color: #1a273a;
+  background-size: 40px 40px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hundred-bar {
+  width: 100%;
 }
