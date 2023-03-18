@@ -88,6 +88,7 @@ body {
 
     &__menu-block {
         display: flex;
+        align-items: center;
 
         &_item {
         }
@@ -256,13 +257,34 @@ body {
         margin-bottom: 40px;
     }
 
+    &__blocks-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__blocks {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 50px;
     }
 
     &__block {
     }
+
+    //&__block {
+    //    &:hover {
+    //        p {
+    //            color: #fff;
+    //        }
+    //        .progress-bar {
+    //            background: #fff;
+    //        }
+    //    }
+    //}
+
+    //&__block-item:hover {
+    //    background: none;
+    //}
 
     &__block-item {
         padding: 30px 32px 0px 52px;
@@ -276,7 +298,6 @@ body {
 
         &_title {
             margin-right: 37px;
-            transition: 0.3s all ease-in-out;
         }
 
         &_title-link {
@@ -286,7 +307,7 @@ body {
             font-size: 24px;
             line-height: 28px;
             color: #1a273a;
-            transition: 0.3s all ease-in-out;
+            transition: 0.5s all ease-in-out;
         }
 
         &_progres {
@@ -303,6 +324,7 @@ body {
             line-height: 13px;
             color: #1a273a;
             margin-bottom: 5px;
+            transition: 0.5s all ease-in-out;
         }
 
         &_desription {
@@ -316,6 +338,7 @@ body {
             line-height: 19px;
             color: #000000;
             margin-bottom: 6px;
+            transition: 0.5s all ease-in-out;
         }
 
         &_description-l {
@@ -325,6 +348,7 @@ body {
             line-height: 17px;
             line-height: 20px;
             color: #000000;
+            transition: 0.5s all ease-in-out;
         }
     }
 
@@ -376,4 +400,8 @@ body {
 //----------PROJECTS BAR----------
 .hundred-bar {
     width: 100%;
+}
+
+.kwinkich-bar {
+    width: 5%;
 }
