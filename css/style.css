@@ -339,3 +339,146 @@ body {
 .kwinkich-bar {
   width: 5%;
 }
+
+.media {
+  padding-top: 370px;
+}
+.media__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 55px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.media__block {
+  display: flex;
+  justify-content: space-evenly;
+}
+.media__block:not(:last-child) {
+  margin-bottom: 30px;
+}
+.media__block-item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 210px;
+  border: 2px solid #fff;
+  transition: 0.5s all ease-in-out;
+}
+.media__block-item:hover {
+  background: none;
+}
+.media__block-item:hover h3 {
+  color: #fff;
+}
+.media__block-item:hover i {
+  color: #8280ff;
+}
+.media__block-item-off {
+  padding: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media__block-item-off-icon {
+  margin-right: 15px;
+}
+.media__block-item-off-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  transition: 0.5s all ease-in-out;
+}
+
+.fa-brands {
+  transition: 0.5s all ease-in-out;
+}
+
+.fa-discord {
+  font-size: 30px;
+  color: #000000;
+}
+
+.fa-linkedin {
+  font-size: 30px;
+  color: #000000;
+}
+
+.fa-github {
+  font-size: 30px;
+  color: #000000;
+}
+
+.fa-reddit {
+  font-size: 30px;
+  color: #000000;
+}
+
+.fa-twitter {
+  font-size: 30px;
+  color: #000000;
+}
+
+.fa-telegram {
+  font-size: 30px;
+  color: #000000;
+}
+
+.discord__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.linkedin__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.github__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.reddit__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.twitter__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.tg__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
