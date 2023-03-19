@@ -78,6 +78,34 @@ body {
     color: #ff8a00;
 }
 
+.fa-brands {
+    transition: 0.5s all ease-in-out;
+}
+.fa-discord {
+    font-size: 30px;
+    color: #000000;
+}
+.fa-linkedin {
+    font-size: 30px;
+    color: #000000;
+}
+.fa-github {
+    font-size: 30px;
+    color: #000000;
+}
+.fa-reddit {
+    font-size: 30px;
+    color: #000000;
+}
+.fa-twitter {
+    font-size: 30px;
+    color: #000000;
+}
+.fa-telegram {
+    font-size: 30px;
+    color: #000000;
+}
+
 //----------HEADER----------
 .header {
     margin-top: 50px;
@@ -457,35 +485,7 @@ body {
     }
 }
 
-//----------MEDIA ICON----------
-.fa-brands {
-    transition: 0.5s all ease-in-out;
-}
-.fa-discord {
-    font-size: 30px;
-    color: #000000;
-}
-.fa-linkedin {
-    font-size: 30px;
-    color: #000000;
-}
-.fa-github {
-    font-size: 30px;
-    color: #000000;
-}
-.fa-reddit {
-    font-size: 30px;
-    color: #000000;
-}
-.fa-twitter {
-    font-size: 30px;
-    color: #000000;
-}
-.fa-telegram {
-    font-size: 30px;
-    color: #000000;
-}
-
+//----------MEDIA LINK----------
 .discord {
     &__link {
         position: absolute;
@@ -549,5 +549,91 @@ body {
         top: 0;
         left: 0;
         z-index: 1;
+    }
+}
+
+.footer {
+    margin-top: 240px;
+    background-color: #141d30;
+    &__content {
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+    }
+
+    &__menu-block {
+        display: flex;
+        flex-direction: column;
+
+        &_item {
+        }
+
+        &_item:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &_item-link {
+            position: relative;
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #ffffff;
+            transition: 0.5s all ease-in-out;
+        }
+
+        &_item-link::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #8280ff;
+            transition: 0.5s all ease-in-out;
+        }
+        &_item-link:hover::after {
+            width: 100%;
+        }
+    }
+
+    &__comm-blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__comm-block {
+        display: flex;
+        flex-direction: column;
+        &_p {
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        &_link {
+            font-family: $Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #ffffff;
+        }
+    }
+
+    &__comm-block:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__lang {
     }
 }
