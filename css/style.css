@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1a273a;
   font-family: "Montserrat", sans-serif;
@@ -119,7 +123,6 @@ body {
 
 .header {
   margin-top: 50px;
-  margin-bottom: 240px;
 }
 .header__menu {
   margin-left: 600px;
@@ -551,4 +554,214 @@ body {
 }
 .footer__comm-block:not(:last-child) {
   margin-bottom: 20px;
+}
+.header {
+  margin-top: 50px;
+  margin-bottom: 240px;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-block {
+  margin-left: 600px;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+}
+.header__menu-list_item:not(:last-child) {
+  margin-right: 30px;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.hero__title span {
+  color: #8280ff;
+}
+.hero__paragraph {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 59px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 70px;
+}
+.hero__btn {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  padding: 23px 86px;
+  background-color: #8280ff;
+  border: 2px solid #8280ff;
+  transition: 0.4s all ease-in-out;
+}
+.hero__btn:hover {
+  color: #8280ff;
+  background: none;
+}
+
+.tools {
+  margin-top: 420px;
+}
+.tools__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 55px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tools__block-item-off-icon {
+  color: #ff9900;
+}
+.tools__block-item-off-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.projects {
+  padding-top: 370px;
+}
+.projects__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.projects__flex {
+  display: flex;
+  flex-direction: column;
+}
+.projects__blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.projects__block-item {
+  padding: 30px 32px 0px 52px;
+  background: #fff;
+  height: 210px;
+  max-width: 420px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+.projects__block-item_flex {
+  display: flex;
+  align-items: center;
+}
+.projects__block-item_title {
+  margin-right: 37px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a273a;
+  transition: 0.5s all ease-in-out;
+}
+.projects__block-item_progres-side {
+  border: 1px solid #1a273a;
+}
+.projects__block-item_progres-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 13px;
+  color: #1a273a;
+  margin-bottom: 5px;
+  transition: 0.5s all ease-in-out;
+}
+.projects__block-item_desription {
+  margin-top: 40px;
+}
+.projects__block-item_description-p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 6px;
+  transition: 0.5s all ease-in-out;
+}
+.projects__block-item_description-l {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  line-height: 20px;
+  color: #000000;
+  transition: 0.5s all ease-in-out;
+}
+
+.progress-bg {
+  background: #e6e9ed;
+  position: relative;
+  height: 8px;
+  width: 155px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  overflow: hidden;
+  background: #ac92ec;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress-bar:after {
+  background-color: #1a273a;
+  background-size: 40px 40px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hundred-bar {
+  width: 100%;
+}
+
+.kwinkich-bar {
+  width: 5%;
 }

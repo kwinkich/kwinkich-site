@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/local-null-style.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components.css" />
     <link rel="icon" type="icon/svg" href="./img/logo-m.svg" />
     <link
       rel="stylesheet"
@@ -18,51 +19,63 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="header">
         <div class="container">
-          <div class="header-content">
+          <div class="header__content">
             <div class="header__logo logo">
-              <a href="#" class="header__logo-link logo-link">
+              <a href="#header" class="header__logo-link logo-link">
                 <img src="./img/logo.svg" alt="Logo" />
               </a>
             </div>
-            <div class="header__menu">
-              <ul class="header__menu-block">
-                <li class="header__menu-block_item">
-                  <a href="" class="header__menu-block_item-link">Головна</a>
+            <nav class="header__menu-block">
+              <ul class="header__menu-list">
+                <li class="header__menu-list_item">
+                  <a href="#hero" class="header__menu-list_item-link nav-link"
+                    >Головна</a
+                  >
                 </li>
-                <li class="header__menu-block_item">
-                  <a href="" class="header__menu-block_item-link">Проєкти</a>
+                <li class="header__menu-list_item">
+                  <a
+                    href="#projects"
+                    class="header__menu-list_item-link nav-link"
+                    >Проєкти</a
+                  >
                 </li>
-                <li class="header__menu-block_item">
-                  <a href="" class="header__menu-block_item-link">Контакти</a>
+                <li class="header__menu-list_item">
+                  <a href="#media" class="header__menu-list_item-link nav-link"
+                    >Контакти</a
+                  >
                 </li>
               </ul>
-            </div>
-            <div class="header__lang">
+            </nav>
+            <div class="header__lang lang">
               <img src="./img/ukr.png" alt="ukr" />
             </div>
           </div>
         </div>
       </header>
-      <hero class="hero">
+
+      <hero class="hero" id="hero">
         <div class="container">
-          <div class="hero-content">
+          <div class="hero__content">
             <h1 class="hero__title">Привіт, я <span>Kwinkich</span></h1>
             <p class="hero__paragraph">А це мій сайт-візитка</p>
             <a href="#" class="hero__btn">Переглянути проєкти</a>
           </div>
         </div>
       </hero>
-      <section class="tools">
+
+      <section class="tools" id="tools">
         <div class="container">
           <div class="tools__content">
-            <h2 class="tools__title">Засвоєні навички та технології</h2>
-            <div class="tools__blocks">
-              <div class="tools__block">
-                <div class="tools__block-item">
-                  <div class="tools__block-item-off">
-                    <div class="tools__block-item-off-icon">
+            <h2 class="tools__title h2-title">
+              Засвоєні навички та технології
+            </h2>
+            <div class="tools__blocks section-blocks">
+              <div class="tools__block section-block">
+                <div class="tools__block-item section-item">
+                  <div class="tools__block-item-off section-item-off">
+                    <div>
                       <i class="fa-brands fa-html5"></i>
                     </div>
                     <div class="tools__block-item-off-title">
@@ -70,9 +83,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tools__block-item">
-                  <div class="tools__block-item-off">
-                    <div class="tools__block-item-off-icon">
+                <div class="tools__block-item section-item">
+                  <div class="tools__block-item-off section-item-off">
+                    <div>
                       <i class="fa-brands fa-css3-alt"></i>
                     </div>
                     <div class="tools__block-item-off-title">
@@ -80,9 +93,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tools__block-item">
-                  <div class="tools__block-item-off">
-                    <div class="tools__block-item-off-icon">
+                <div class="tools__block-item section-item">
+                  <div class="tools__block-item-off section-item-off">
+                    <div>
                       <i class="fa-brands fa-figma"></i>
                     </div>
                     <div class="tools__block-item-off-title">
@@ -91,10 +104,10 @@
                   </div>
                 </div>
               </div>
-              <div class="tools__block">
-                <div class="tools__block-item">
-                  <div class="tools__block-item-off">
-                    <div class="tools__block-item-off-icon">
+              <div class="tools__block section-block">
+                <div class="tools__block-item section-item">
+                  <div class="tools__block-item-off section-item-off">
+                    <div>
                       <i class="fa-brands fa-square-js"></i>
                     </div>
                     <div class="tools__block-item-off-title">
@@ -102,9 +115,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tools__block-item">
-                  <div class="tools__block-item-off">
-                    <div class="tools__block-item-off-icon">
+                <div class="tools__block-item section-item">
+                  <div class="tools__block-item-off section-item-off">
+                    <div>
                       <i class="fa-brands fa-bootstrap"></i>
                     </div>
                     <div class="tools__block-item-off-title">
@@ -112,9 +125,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tools__block-item">
-                  <div class="tools__block-item-off">
-                    <div class="tools__block-item-off-icon">
+                <div class="tools__block-item section-item">
+                  <div class="tools__block-item-off section-item-off">
+                    <div>
                       <i class="fa-brands fa-python"></i>
                     </div>
                     <div class="tools__block-item-off-title">
@@ -127,21 +140,20 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+
+      <section class="projects" id="projects">
         <div class="container">
           <div class="projects__content">
-            <h2 class="projects__title">Мої проєкти</h2>
-            <div class="projects__blocks-flex">
+            <h2 class="projects__title h2-title">Мої проєкти</h2>
+            <div class="projects__flex">
               <div class="projects__blocks">
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">
-                          snake-game
-                        </p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">snake-game</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
                           Проєкт виконан на 100%
                         </p>
@@ -171,13 +183,11 @@
                 </div>
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">
-                          online-chat
-                        </p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">online-chat</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
                           Проєкт виконан на 100%
                         </p>
@@ -208,13 +218,11 @@
               <div class="projects__blocks">
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">
-                          xiaomi-site
-                        </p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">xiaomi-site</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
                           Проєкт виконан на 100%
                         </p>
@@ -242,13 +250,11 @@
                 </div>
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">
-                          weather-site
-                        </p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">weather-site</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
                           Проєкт виконан на 100%
                         </p>
@@ -280,13 +286,11 @@
               <div class="projects__blocks">
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">
-                          moxa-visite
-                        </p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">moxa-visite</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
                           Проєкт виконан на 100%
                         </p>
@@ -315,13 +319,11 @@
                 </div>
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">
-                          login-form
-                        </p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">login-form</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
                           Проєкт виконан на 100%
                         </p>
@@ -353,11 +355,11 @@
               <div class="projects__blocks">
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">itStudio</p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">itStudio</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
                           Проєкт виконан на 100%
                         </p>
@@ -385,15 +387,13 @@
                 </div>
                 <div class="projects__block">
                   <div class="projects__block-item">
-                    <div class="projects__block-item-flex">
-                      <div class="projects__block-item_title">
-                        <p class="projects__block-item_title-link">
-                          kwinkich-site
-                        </p>
+                    <div class="projects__block-item_flex">
+                      <div>
+                        <p class="projects__block-item_title">kwinkich-site</p>
                       </div>
-                      <div class="projects__block-item_progres">
+                      <div>
                         <p class="projects__block-item_progres-title">
-                          Проєкт виконан на 5%
+                          Проєкт виконан на 100%
                         </p>
                         <div class="progress-bg">
                           <div class="progress-bar kwinkich-bar"></div>
@@ -423,7 +423,8 @@
           </div>
         </div>
       </section>
-      <section class="media">
+
+      <section class="media" id="media">
         <div class="container">
           <div class="media__content">
             <h2 class="media__title">Зв'язатися зі мною</h2>
@@ -516,7 +517,8 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
+
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="footer__content">
             <div class="footer__logo logo">
@@ -570,3 +572,365 @@
     <script src="./js/scripts.js"></script>
   </body>
 </html>
+
+<!----------------------РЕВЬЮ-КОДА---------------------->
+<!--<header class="header">
+  <div class="container">
+    <div class="header__content">
+      <div class="header__logo logo">
+        <a href="#" class="header__logo-link logo-link">
+          <img src="./img/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <nav class="header__menu-block">
+        <ul class="header__menu-list_item">
+          <li class="header__menu-list_item_item">
+            <a href="" class="header__menu-list_item-link nav-link">Головна</a>
+          </li>
+          <li class="header__menu-list_item_item">
+            <a href="" class="header__menu-list_item-link">Проєкти</a>
+          </li>
+          <li class="header__menu-list_item_item">
+            <a href="" class="header__menu-list_item-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__lang lang">
+        <img src="./img/ukr.png" alt="ukr" />
+      </div>
+    </div>
+  </div>
+</header>-->
+
+<!--<hero class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">Привіт, я <span>Kwinkich</span></h1>
+      <p class="hero__paragraph">А це мій сайт-візитка</p>
+      <a href="#" class="hero__btn">Переглянути проєкти</a>
+    </div>
+  </div>
+</hero>-->
+
+<!--<section class="tools">
+  <div class="container">
+    <div class="tools__content">
+      <h2 class="tools__title h2-title">Засвоєні навички та технології</h2>
+      <div class="tools__blocks section-blocks">
+        <div class="tools__block section-block">
+          <div class="tools__block-item section-item">
+            <div class="tools__block-item-off section-item-off">
+              <div>
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="tools__block-item-off-title">
+                <h3 class="item-title html">html5</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tools__block-item section-item">
+            <div class="tools__block-item-off section-item-off">
+              <div>
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="tools__block-item-off-title">
+                <h3 class="item-title css">css3</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tools__block-item section-item">
+            <div class="tools__block-item-off section-item-off">
+              <div>
+                <i class="fa-brands fa-figma"></i>
+              </div>
+              <div class="tools__block-item-off-title">
+                <h3 class="item-title figma">Figma</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tools__block section-block">
+          <div class="tools__block-item section-item">
+            <div class="tools__block-item-off section-item-off">
+              <div>
+                <i class="fa-brands fa-square-js"></i>
+              </div>
+              <div class="tools__block-item-off-title">
+                <h3 class="item-title js">JS</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tools__block-item section-item">
+            <div class="tools__block-item-off section-item-off">
+              <div>
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="tools__block-item-off-title">
+                <h3 class="item-title boot">Bootstrap</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tools__block-item section-item">
+            <div class="tools__block-item-off section-item-off">
+              <div>
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="tools__block-item-off-title">
+                <h3 class="item-title py">Python</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<!--<section class="projects" id="projects">
+  <div class="container">
+    <div class="projects__content">
+      <h2 class="projects__title h2-title">Мої проєкти</h2>
+      <div class="projects__flex">
+        <div class="projects__blocks">
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">snake-game</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar hundred-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Проєкт був написаний з метою поліпшення моїх знань з Java
+                  Script і невеликої практики написання коду за допомогою ООП.
+                  Так само мені дуже сильно хотілося просто пограти в змійку
+                </p>
+              </div>
+              <a href="https://github.com/kwinkich/snake-game" target="_blank">
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">online-chat</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar hundred-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Чат був написаний заради інтересу, а також для ознайомлення з
+                  бібліотекою PyWebIo, проєкт писався за інструкцією з каналу
+                  Гауді Хо
+                </p>
+              </div>
+              <a href="https://github.com/kwinkich/online-chat" target="_blank">
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__blocks">
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">xiaomi-site</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar hundred-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Проєкт був написаний з метою поліпшення моїх навичок у
+                  hrtml&css і навчання роботи зі slick-slider
+                </p>
+              </div>
+              <a
+                href="https://github.com/kwinkich/xiaomi-scooter-site"
+                target="_blank"
+              >
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">weather-site</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar hundred-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Проєкт був написаний з метою отримання знань і досвіду роботи
+                  з API, так само це перший крок до створення pet-проєкту,
+                  основною тематикою якого є - сайт з прогнозом погоди.
+                </p>
+              </div>
+              <a
+                href="https://github.com/kwinkich/weather-site"
+                target="_blank"
+              >
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__blocks">
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">moxa-visite</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar hundred-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Проєкт був написаний з метою ознайомлення з більш складними
+                  структурами в html і просто як ще одна робота в портфоліо
+                </p>
+              </div>
+              <a href="https://github.com/kwinkich/moxa-visite" target="_blank">
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">login-form</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar hundred-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Форма реєстрації написана просто для того, щоб акуратно лежати
+                  в моєму портфоліо. А так само в найближчому майбутньому буде
+                  перевикористана для створення сайту з авторизацією за
+                  допомогою JWT
+                </p>
+              </div>
+              <a href="https://github.com/kwinkich/login-form" target="_blank">
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__blocks">
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">itStudio</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar hundred-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Один із моїх перших проєктів, які я написав і запустив на
+                  гітхаб, мені нічого про нього сказати
+                </p>
+              </div>
+              <a href="https://github.com/kwinkich/itStudio" target="_blank">
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+          <div class="projects__block">
+            <div class="projects__block-item">
+              <div class="projects__block-item_flex">
+                <div>
+                  <p class="projects__block-item_title">kwinkich-site</p>
+                </div>
+                <div>
+                  <p class="projects__block-item_progres-title">
+                    Проєкт виконан на 100%
+                  </p>
+                  <div class="progress-bg">
+                    <div class="progress-bar kwinkich-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__block-item_desription">
+                <p class="projects__block-item_description-p">Опис проєкту:</p>
+                <p class="projects__block-item_description-l">
+                  Цей проект перебуває в розробці, те, що ви бачите зараз -
+                  перша версія мого проекту. У майбутньому я хочу зробити з
+                  цього сайту щось грандіозне і цікаве
+                </p>
+              </div>
+              <a
+                href="https://github.com/kwinkich/kwinkich-site"
+                target="_blank"
+              >
+                <span class="link"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
