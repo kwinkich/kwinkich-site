@@ -36,3 +36,63 @@
 .nav-link:hover::after {
   width: 100%;
 }
+
+.lang {
+  max-width: 50px;
+}
+
+.lang img {
+  width: 100%;
+}
+
+.header__hamburger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  left: 130px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.header__hamburger span {
+  height: 2px;
+  width: 10px;
+  top: 15px;
+  transform: scale(1);
+  background-color: #faf6f2;
+}
+
+.header__hamburger::before,
+.header__hamburger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #faf6f2;
+  transition: all 0.3s ease 0s;
+}
+
+.header__hamburger::before {
+  top: 0;
+}
+
+.header__hamburger::after {
+  bottom: 0;
+}
+
+/* Добавляем класс active для анимации иконки бургера */
+.header__hamburger.active span {
+  transform: scale(0);
+}
+
+.header__hamburger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.header__hamburger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
