@@ -1,0 +1,115 @@
+.fa-brands {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.fa-html5 {
+  color: #ff9900;
+}
+
+.fa-css3-alt {
+  color: #001aff;
+}
+
+.fa-figma {
+  color: #8000ff;
+}
+
+.fa-square-js {
+  color: #0094ff;
+}
+
+.fa-bootstrap {
+  color: #986afa;
+}
+
+.fa-python {
+  color: #ff8a00;
+}
+
+.html {
+  color: #ff9900;
+}
+
+.css {
+  color: #001aff;
+}
+
+.figma {
+  color: #8000ff;
+}
+
+.js {
+  color: #0094ff;
+}
+
+.boot {
+  color: #986afa;
+}
+
+.py {
+  color: #ff8a00;
+}
+
+.discord__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.linkedin__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.github__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.reddit__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.twitter__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.tg__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

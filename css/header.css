@@ -1,0 +1,38 @@
+.logo {
+  max-width: 50px;
+  transition: 0.4s all ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(25deg);
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.nav-link {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #8280ff;
+  transition: 0.5s all ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

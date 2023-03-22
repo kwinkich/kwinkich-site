@@ -1,0 +1,37 @@
+$Raleway: "Raleway", sans-serif;
+
+.section-blocks {
+}
+
+.section-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-block:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.section-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 210px;
+    border: 2px solid #fff;
+
+    &-off {
+        padding: 17px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.item-title {
+    font-family: $Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: "pnum" on, "lnum" on;
+}
