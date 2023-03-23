@@ -68,6 +68,11 @@ body {
     }
 
     &__lang {
+        max-width: 50px;
+    }
+
+    &__lang img {
+        width: 100%;
     }
 }
 //-------------------------HERO-------------------------
@@ -82,13 +87,13 @@ body {
         font-weight: 700;
         font-size: 80px;
         line-height: 94px;
-        color: #ffffff;
+        color: #8280ff;
         text-align: center;
         margin-bottom: 15px;
     }
 
     &__title span {
-        color: #8280ff;
+        color: #fff;
     }
 
     &__paragraph {
@@ -385,6 +390,9 @@ body {
 
     &__lang {
     }
+
+    &__btns {
+    }
 }
 
 @media (max-width: 1090px) {
@@ -415,6 +423,10 @@ body {
     .header__hamburger {
         display: flex;
         z-index: 5;
+    }
+
+    .uk {
+        margin-bottom: 15px;
     }
 
     .header__menu-block {
@@ -501,6 +513,20 @@ body {
     .hero__paragraph {
         margin-bottom: 30px;
     }
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__menu {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    .footer__comm-blocks {
+        margin-bottom: 30px;
+    }
+    .footer__comm-block {
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 470px) {
@@ -525,20 +551,6 @@ body {
     }
     .projects__block-item_flex {
         flex-direction: column;
-        align-items: flex-start;
-    }
-    .footer__content {
-        flex-direction: column;
-    }
-    .footer__menu {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        align-items: center;
-    }
-    .footer__comm-blocks {
-        margin-bottom: 30px;
-    }
-    .footer__comm-block {
         align-items: flex-start;
     }
     .header__hamburger {

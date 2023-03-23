@@ -31,49 +31,42 @@
             </div>
             <nav class="header__menu-block">
               <ul class="header__menu-list">
-                <li class="header__menu-list_item">
-                  <a href="#tools" class="header__menu-list_item-link nav-link"
+                <li class="header__menu-list_item lang">
+                  <a
+                    href="#tools"
+                    class="header__menu-list_item-link nav-link lang"
+                    key="technology"
                     >Технології</a
                   >
                 </li>
                 <li class="header__menu-list_item">
                   <a
                     href="#projects"
-                    class="header__menu-list_item-link nav-link"
+                    class="header__menu-list_item-link nav-link lang"
+                    key="projects"
                     >Проєкти</a
                   >
                 </li>
                 <li class="header__menu-list_item">
-                  <a href="#media" class="header__menu-list_item-link nav-link"
+                  <a
+                    href="#media"
+                    class="header__menu-list_item-link nav-link lang"
+                    key="contacts"
                     >Контакти</a
                   >
+                </li>
+                <li>
+                  <button id="uk" class="header__lang translate uk">
+                    <img src="./img/ukr.png" alt="ukr" />
+                  </button>
+                </li>
+                <li>
+                  <button id="en" class="header__lang translate">
+                    <img src="./img/usa.png" alt="usa" />
+                  </button>
                 </li>
               </ul>
             </nav>
-            <!--<nav class="header__menu-block">
-              <ul class="header__menu-list">
-                <li class="header__menu-list_item">
-                  <a href="#tools" class="header__menu-list_item-link nav-link"
-                    >Технології</a
-                  >
-                </li>
-                <li class="header__menu-list_item">
-                  <a
-                    href="#projects"
-                    class="header__menu-list_item-link nav-link"
-                    >Проєкти</a
-                  >
-                </li>
-                <li class="header__menu-list_item">
-                  <a href="#media" class="header__menu-list_item-link nav-link"
-                    >Контакти</a
-                  >
-                </li>
-              </ul>
-            </nav>-->
-            <div class="header__lang lang">
-              <img src="./img/ukr.png" alt="ukr" />
-            </div>
           </div>
         </div>
       </header>
@@ -81,9 +74,16 @@
       <hero class="hero" id="hero">
         <div class="container">
           <div class="hero__content">
-            <h1 class="hero__title">Привіт, я <span>Kwinkich</span></h1>
-            <p class="hero__paragraph">А це мій сайт-візитка</p>
-            <a href="#projects" class="hero__btn">Переглянути проєкти</a>
+            <h1 class="hero__title lang">
+              <span class="lang" key="Hello">Привіт, я</span>
+              Kwinkich
+            </h1>
+            <p class="hero__paragraph lang" key="paragraph">
+              А це мій сайт-візитка
+            </p>
+            <a href="#projects" class="hero__btn lang" key="heroBtn"
+              >Переглянути проєкти</a
+            >
           </div>
         </div>
       </hero>
@@ -91,7 +91,7 @@
       <section class="tools" id="tools">
         <div class="container">
           <div class="tools__content">
-            <h2 class="tools__title h2-title">
+            <h2 class="tools__title h2-title lang" key="tools">
               Засвоєні навички та технології
             </h2>
             <div class="tools__blocks section-blocks">
@@ -167,7 +167,9 @@
       <section class="projects" id="projects">
         <div class="container">
           <div class="projects__content">
-            <h2 class="projects__title h2-title">Мої проєкти</h2>
+            <h2 class="projects__title h2-title lang" key="myprojects">
+              Мої проєкти
+            </h2>
             <div class="projects__flex">
               <div class="projects__blocks">
                 <div class="projects__block-item">
@@ -176,7 +178,10 @@
                       <p class="projects__block-item_title">snake-game</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="completeBar"
+                      >
                         Проєкт виконан на 100%
                       </p>
                       <div class="progress-bg">
@@ -185,10 +190,16 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p
+                      class="projects__block-item_description-p lang"
+                      key="description"
+                    >
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoSnake"
+                    >
                       Проєкт був написаний з метою поліпшення моїх знань з Java
                       Script і невеликої практики написання коду за допомогою
                       ООП. Так само мені дуже сильно хотілося просто пограти в
@@ -208,7 +219,10 @@
                       <p class="projects__block-item_title">online-chat</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="completeBar"
+                      >
                         Проєкт виконан на 100%
                       </p>
                       <div class="progress-bg">
@@ -217,10 +231,16 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p
+                      class="projects__block-item_description-p lang"
+                      key="description"
+                    >
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoChat"
+                    >
                       Чат був написаний заради інтересу, а також для
                       ознайомлення з бібліотекою PyWebIo, проєкт писався за
                       інструкцією з каналу Гауді Хо
@@ -241,7 +261,10 @@
                       <p class="projects__block-item_title">xiaomi-site</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="completeBar"
+                      >
                         Проєкт виконан на 100%
                       </p>
                       <div class="progress-bg">
@@ -250,10 +273,16 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p
+                      class="projects__block-item_description-p lang"
+                      key="description"
+                    >
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoXiaomi"
+                    >
                       Проєкт був написаний з метою поліпшення моїх навичок у
                       hrtml&css і навчання роботи зі slick-slider
                     </p>
@@ -271,7 +300,10 @@
                       <p class="projects__block-item_title">weather-site</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="completeBar"
+                      >
                         Проєкт виконан на 100%
                       </p>
                       <div class="progress-bg">
@@ -280,10 +312,16 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p
+                      class="projects__block-item_description-p lang"
+                      key="description"
+                    >
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoWeather"
+                    >
                       Проєкт був написаний з метою отримання знань і досвіду
                       роботи з API, так само це перший крок до створення
                       pet-проєкту, основною тематикою якого є - сайт з прогнозом
@@ -305,7 +343,10 @@
                       <p class="projects__block-item_title">moxa-visite</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="completeBar"
+                      >
                         Проєкт виконан на 100%
                       </p>
                       <div class="progress-bg">
@@ -314,10 +355,13 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p class="projects__block-item_description-p lang">
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoMoxa"
+                    >
                       Проєкт був написаний з метою ознайомлення з більш
                       складними структурами в html і просто як ще одна робота в
                       портфоліо
@@ -336,7 +380,10 @@
                       <p class="projects__block-item_title">login-form</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="completeBar"
+                      >
                         Проєкт виконан на 100%
                       </p>
                       <div class="progress-bg">
@@ -345,10 +392,16 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p
+                      class="projects__block-item_description-p lang"
+                      key="description"
+                    >
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoLogin"
+                    >
                       Форма реєстрації написана просто для того, щоб акуратно
                       лежати в моєму портфоліо. А так само в найближчому
                       майбутньому буде перевикористана для створення сайту з
@@ -370,7 +423,10 @@
                       <p class="projects__block-item_title">itStudio</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="completeBar"
+                      >
                         Проєкт виконан на 100%
                       </p>
                       <div class="progress-bg">
@@ -379,10 +435,16 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p
+                      class="projects__block-item_description-p lang"
+                      key="description"
+                    >
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoStudio"
+                    >
                       Один із моїх перших проєктів, які я написав і запустив на
                       гітхаб, мені нічого про нього сказати
                     </p>
@@ -400,7 +462,10 @@
                       <p class="projects__block-item_title">kwinkich-site</p>
                     </div>
                     <div>
-                      <p class="projects__block-item_progres-title">
+                      <p
+                        class="projects__block-item_progres-title lang"
+                        key="15%bar"
+                      >
                         Проєкт виконан на 15%
                       </p>
                       <div class="progress-bg">
@@ -409,10 +474,16 @@
                     </div>
                   </div>
                   <div class="projects__block-item_desription">
-                    <p class="projects__block-item_description-p">
+                    <p
+                      class="projects__block-item_description-p lang"
+                      key="description"
+                    >
                       Опис проєкту:
                     </p>
-                    <p class="projects__block-item_description-l">
+                    <p
+                      class="projects__block-item_description-l lang"
+                      key="infoKwinkichsite"
+                    >
                       Цей проект перебуває в розробці, те, що ви бачите зараз -
                       перша версія мого проекту. У майбутньому я хочу зробити з
                       цього сайту щось грандіозне і цікаве
@@ -434,7 +505,9 @@
       <section class="media" id="media">
         <div class="container">
           <div class="media__content">
-            <h2 class="media__title">Зв'язатися зі мною</h2>
+            <h2 class="media__title lang" key="seccontacts">
+              Зв'язатися зі мною
+            </h2>
             <div class="media__blocks section-blocks">
               <div class="media__block section-block">
                 <div class="media__block-item section-item">
@@ -544,19 +617,24 @@
                 <li class="footer__menu-block_item">
                   <a
                     href="#header"
-                    class="footer__menu-block_item-link nav-link"
+                    class="footer__menu-block_item-link nav-link lang"
+                    key="home"
                     >Головна</a
                   >
                 </li>
                 <li class="footer__menu-block_item">
                   <a
                     href="#projects"
-                    class="footer__menu-block_item-link nav-link"
+                    class="footer__menu-block_item-link nav-link lang"
+                    key="projects"
                     >Проєкти</a
                   >
                 </li>
                 <li class="footer__menu-block_item">
-                  <a href="#media" class="footer__menu-block_item-link nav-link"
+                  <a
+                    href="#media"
+                    class="footer__menu-block_item-link nav-link lang"
+                    key="contacts"
                     >Контакти</a
                   >
                 </li>
@@ -564,7 +642,9 @@
             </div>
             <div class="footer__comm-blocks">
               <div class="footer__comm-block">
-                <p class="footer__comm-block_p">Пошта для зв'язку:</p>
+                <p class="footer__comm-block_p lang" key="email">
+                  Пошта для зв'язку:
+                </p>
                 <div>
                   <a
                     href="mailto:vankord21@gmail.com"
@@ -575,7 +655,9 @@
                 </div>
               </div>
               <div class="footer__comm-block">
-                <p class="footer__comm-block_p">Телеграм для зв'язку</p>
+                <p class="footer__comm-block_p lang" key="tg">
+                  Телеграм для зв'язку
+                </p>
                 <div>
                   <a
                     href="https://t.me/kwinkichDeveloper"
@@ -586,8 +668,13 @@
                 </div>
               </div>
             </div>
-            <div class="footer__lang">
-              <img src="./img/ukr.png" alt="ukr" />
+            <b<div class="footer__btns">
+              <button id="uk" class="header__lang translate uk">
+                <img src="./img/ukr.png" alt="ukr" />
+              </button>
+              <button id="en" class="header__lang translate">
+                <img src="./img/usa.png" alt="usa" />
+              </button>
             </div>
           </div>
         </div>
@@ -595,5 +682,6 @@
     </div>
 
     <script src="./js/scripts.js"></script>
+    <script src="./js/jquery.min.js"></script>
   </body>
 </html>

@@ -55,6 +55,13 @@ body {
 .header__menu-list_item:not(:last-child) {
   margin-right: 30px;
 }
+.header__lang {
+  max-width: 50px;
+}
+.header__lang img {
+  width: 100%;
+}
+
 .hero__content {
   display: flex;
   flex-direction: column;
@@ -65,12 +72,12 @@ body {
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
-  color: #ffffff;
+  color: #8280ff;
   text-align: center;
   margin-bottom: 15px;
 }
 .hero__title span {
-  color: #8280ff;
+  color: #fff;
 }
 .hero__paragraph {
   font-family: "Raleway", sans-serif;
@@ -345,6 +352,9 @@ body {
     display: flex;
     z-index: 5;
   }
+  .uk {
+    margin-bottom: 15px;
+  }
   .header__menu-block {
     display: none;
     flex-direction: column;
@@ -421,6 +431,20 @@ body {
   .hero__paragraph {
     margin-bottom: 30px;
   }
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__menu {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .footer__comm-blocks {
+    margin-bottom: 30px;
+  }
+  .footer__comm-block {
+    align-items: flex-start;
+  }
 }
 @media (max-width: 470px) {
   .container {
@@ -444,20 +468,6 @@ body {
   }
   .projects__block-item_flex {
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer__content {
-    flex-direction: column;
-  }
-  .footer__menu {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: center;
-  }
-  .footer__comm-blocks {
-    margin-bottom: 30px;
-  }
-  .footer__comm-block {
     align-items: flex-start;
   }
   .header__hamburger {

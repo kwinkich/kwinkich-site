@@ -36,14 +36,24 @@ $Raleway: "Raleway", sans-serif;
     width: 100%;
 }
 
-.lang {
+.translate {
+    border: none;
+    cursor: pointer;
+}
+
+.uk {
+    margin-right: 15px;
+}
+
+.btns {
+    display: flex;
 }
 
 .header__hamburger {
     display: none;
     position: relative;
     z-index: 50;
-    left: 130px;
+    left: 0;
     align-items: center;
     justify-content: flex-end;
     width: 30px;
