@@ -6,6 +6,7 @@ $Raleway: "Raleway", sans-serif;
 .section-block {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .section-block:not(:last-child) {

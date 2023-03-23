@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .logo {
   max-width: 50px;
   transition: 0.4s all ease-in-out;
@@ -18,7 +19,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   transition: 0.5s all ease-in-out;
 }
 
@@ -34,14 +35,6 @@
 }
 
 .nav-link:hover::after {
-  width: 100%;
-}
-
-.lang {
-  max-width: 50px;
-}
-
-.lang img {
   width: 100%;
 }
 
