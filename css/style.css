@@ -477,6 +477,13 @@ body {
     align-items: center;
     align-self: center;
   }
+  .header__hamburger {
+    left: -20px;
+  }
+  .h2-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 @keyframes burgerAnimation {
   from {
