@@ -15,7 +15,6 @@
   left: 0;
 }
 .progress-bar:after {
-  background-color: #1a273a;
   background-size: 40px 40px;
   position: absolute;
   content: "";
