@@ -17,16 +17,18 @@
     <title>Kwinkich</title>
   </head>
   <body>
-    <input
-      class="dark-light"
-      type="checkbox"
-      id="dark-light"
-      name="dark-light"
-      onchange="handleChange(this.checked)"
-    />
-    <label for="dark-light"></label>
-    <div class="light-back"></div>
     <div class="wrapper">
+      <div>
+        <input
+          class="dark-light"
+          type="checkbox"
+          id="dark-light"
+          name="dark-light"
+          onchange="handleChange(this.checked)"
+        />
+        <label for="dark-light"></label>
+        <div class="light-back"></div>
+      </div>
       <header class="header" id="header">
         <div class="container">
           <div class="header__content">
@@ -514,7 +516,7 @@
       <section class="media" id="media">
         <div class="container">
           <div class="media__content">
-            <h2 class="media__title lang" key="seccontacts">
+            <h2 class="media__title h2-title lang" key="seccontacts">
               Зв'язатися зі мною
             </h2>
             <div class="media__blocks section-blocks">
