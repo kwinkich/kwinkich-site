@@ -44,3 +44,17 @@ const handleChange = (isChecked) => {
         document.body.removeAttribute('dark');
     }
 }
+
+
+
+function detectTheme() {
+    const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (isDark) {
+        document.getElementById('dark-light').checked = true;
+    } else {
+        document.getElementById('dark-light').checked = false;
+    }
+}
+
+detectTheme();
