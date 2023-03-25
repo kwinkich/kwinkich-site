@@ -480,10 +480,12 @@ body {
     }
     .hero__title {
         font-size: 50px;
-        margin-bottom: 0;
+        margin-bottom: 10;
+        line-height: 60px;
     }
     .hero__paragraph {
         margin-bottom: 30px;
+        line-height: 35px;
     }
     .footer__content {
         flex-direction: column;
@@ -552,7 +554,7 @@ body {
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
-    position: absolute;
+    position: fixed;
     left: -9999px;
     opacity: 0;
     pointer-events: none;

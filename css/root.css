@@ -12,6 +12,7 @@
   --var-dark-blue1: #141d30;
 
   --var-burger: #faf6f2;
+  --var-header-block: #141d30;
 
   --var-light-projects: #fff;
   --var-projects-blue: #1a273a;
@@ -36,6 +37,7 @@
   --var-light: #fff;
   --var-blue-purple: #8280ff;
   --var-dark-purple: #8280ff;
+  --var-header-block: #fff;
 }
 
 body {
@@ -142,6 +144,6 @@ body {
 
 @media (max-width: 770px) {
   .header__menu-block {
-    background-color: var(--var-const-light);
+    background-color: var(--var-header-block);
   }
 }
