@@ -11,32 +11,6 @@ document.querySelectorAll('.nav-link').forEach(function (link) {
 });
 
 
-
-//document.querySelector('.dark-light').addEventListener('click', (event) => {
-//    event.preventDefault();
-//    if (localStorage.getItem('theme') === 'dark') {
-//        localStorage.removeItem('theme');
-//    }
-//    else {
-//        localStorage.setItem('theme', 'dark')
-//    }
-//    addDarkClassToHTML();
-//});
-
-//function addDarkClassToHTML() {
-//    try {
-//        if (localStorage.getItem('theme') === 'dark') {
-//            document.querySelector('html').classList.add('dark');
-//        }
-
-//        else {
-//            document.querySelector('html').classList.remove('dark');
-//        }
-//    } catch (err) { }
-//}
-
-//addDarkClassToHTML();
-
 const handleChange = (isChecked) => {
     if (isChecked) {
         document.body.setAttribute('dark', '');
@@ -46,15 +20,29 @@ const handleChange = (isChecked) => {
 }
 
 
+const checkbox = document.querySelector('#dark-light');
 
-function detectTheme() {
-    const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (isDark) {
-        document.getElementById('dark-light').checked = true;
-    } else {
-        document.getElementById('dark-light').checked = false;
-    }
+// Проверяем, есть ли сохраненная тема в локальном хранилище
+if (localStorage.getItem('theme') === 'dark') {
+    // Если есть, то устанавливаем значение true для чекбокса, чтобы он был отмечен
+    checkbox.checked = true;
+    // И переключаем тему
+    handleChange(true);
 }
 
-detectTheme();
+// Добавляем обработчик события "change" для чекбокса
+checkbox.addEventListener('change', function () {
+    // Если чекбокс отмечен, то сохраняем значение "dark" в локальном хранилище
+    if (this.checked) {
+        localStorage.setItem('theme', 'dark');
+        // И переключаем тему
+        handleChange(true);
+    } else {
+        // Если чекбокс не отмечен, то удаляем сохраненное значение из локального хранилища
+        localStorage.removeItem('theme');
+        // И переключаем тему
+        handleChange(false);
+    }
+});
+
+

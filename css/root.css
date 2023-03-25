@@ -40,28 +40,6 @@
   --var-header-block: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  /* Добавляем класс dark-mode к body, если темная тема включена на устройстве */
-  body {
-    background-color: var(--var-light);
-  }
-  .dark-light:checked + label:before {
-    background-image: url("https://assets.codepen.io/1462889/sun.svg");
-    background-color: #48dbfb;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  /* Удаляем класс dark-mode, если светлая тема включена на устройстве */
-  body {
-    background-color: var(--var-light);
-  }
-  .dark-light:checked + label:before {
-    background-image: url("https://assets.codepen.io/1462889/moon.svg");
-    background-color: #102770;
-  }
-}
-
 body {
   background-color: var(--var-dark-blue);
 }
