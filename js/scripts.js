@@ -21,7 +21,6 @@ const handleChange = (isChecked) => {
 
 
 const checkbox = document.querySelector('#dark-light');
-
 // Проверяем, есть ли сохраненная тема в локальном хранилище
 if (localStorage.getItem('theme') === 'dark') {
     // Если есть, то устанавливаем значение true для чекбокса, чтобы он был отмечен
