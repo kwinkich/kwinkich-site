@@ -6,6 +6,7 @@
 @import url("../css/title.css");
 @import url("../css/adaptive.css");
 @import url("../css/hamburger.css");
+@import url("../css/switch.css");
 @import url("../css/root.css");
 html {
   scroll-behavior: smooth;
@@ -19,18 +20,6 @@ body {
 .container {
   max-width: 1050px;
   margin: 0 auto;
-}
-
-.lock {
-  overflow: hidden;
-}
-
-.open {
-  display: flex !important;
-}
-
-.close {
-  display: block;
 }
 
 .header {
@@ -460,79 +449,4 @@ body {
   to {
     opacity: 1;
   }
-}
-[type=checkbox]:checked,
-[type=checkbox]:not(:checked) {
-  position: fixed;
-  left: -9999px;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.dark-light:checked + label,
-.dark-light:not(:checked) + label {
-  position: fixed;
-  top: 90%;
-  right: 40px;
-  z-index: 20000;
-  display: block;
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-  cursor: pointer;
-  transition: all 200ms linear;
-  box-shadow: 0 0 25px rgba(255, 235, 167, 0.45);
-}
-.dark-light:checked + label:after,
-.dark-light:not(:checked) + label:after {
-  position: absolute;
-  content: "";
-  top: 1px;
-  left: 1px;
-  overflow: hidden;
-  z-index: 2;
-  display: block;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: #102770;
-  background-image: url("https://assets.codepen.io/1462889/moon.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 200ms linear;
-  opacity: 0;
-}
-.dark-light:checked + label:before,
-.dark-light:not(:checked) + label:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 1;
-  display: block;
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-  background-color: #48dbfb;
-  background-image: url("https://assets.codepen.io/1462889/sun.svg");
-  background-size: 25px 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 200ms linear;
-}
-
-.dark-light:checked + label {
-  transform: rotate(360deg);
-}
-.dark-light:checked + label:after {
-  opacity: 1;
-}
-.dark-light:checked + label:before {
-  background-color: #000;
-}
-
-.dark-light:checked ~ .light-back {
-  opacity: 1;
 }

@@ -1,3 +1,4 @@
+//Функционал меню и закрытие при клике на ссылки
 document.querySelector('.header__hamburger').addEventListener('click', function () {
     this.classList.toggle('active');
     document.querySelector('.header__menu-block').classList.toggle('open');
@@ -11,6 +12,8 @@ document.querySelectorAll('.nav-link').forEach(function (link) {
 });
 
 
+
+//Постоянная для переключателя темы
 const handleChange = (isChecked) => {
     if (isChecked) {
         document.body.setAttribute('dark', '');
@@ -18,7 +21,6 @@ const handleChange = (isChecked) => {
         document.body.removeAttribute('dark');
     }
 }
-
 
 const checkbox = document.querySelector('#dark-light');
 // Проверяем, есть ли сохраненная тема в локальном хранилище
@@ -43,5 +45,3 @@ checkbox.addEventListener('change', function () {
         handleChange(false);
     }
 });
-
-

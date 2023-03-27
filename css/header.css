@@ -101,3 +101,15 @@
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
 }
+
+.lock {
+  overflow: hidden;
+}
+
+.open {
+  display: flex !important;
+}
+
+.close {
+  display: block;
+}
