@@ -7,6 +7,7 @@
 @import url("../css/adaptive.css");
 @import url("../css/hamburger.css");
 @import url("../css/switch.css");
+@import url("../css/animation.css");
 @import url("../css/root.css");
 html {
   scroll-behavior: smooth;
@@ -440,13 +441,5 @@ body {
   .h2-title {
     font-size: 35px;
     line-height: 35px;
-  }
-}
-@keyframes burgerAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
