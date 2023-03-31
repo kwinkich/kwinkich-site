@@ -66,3 +66,34 @@ gsap.from('.tools__block-item', {
     stagger: 1,
     y: 50,
 })
+
+
+
+
+gsap.from('.projects__title', {
+    scrollTrigger: {
+        trigger: '.projects__content',
+        start: '-30% center',
+        end: '+=300px',
+        scrub: true,
+        markers: true,
+    },
+    opacity: 0,
+    transfromOrigin: 'bottom center',
+    y: 50,
+})
+
+gsap.from('.projects__block-item', {
+    scrollTrigger: {
+        trigger: '.projects__content',
+        start: '-10% center',
+        end: '+=350px',
+        scrub: true,
+        markers: true,
+    },
+    opacity: 0,
+    transfromOrigin: 'bottom center',
+    ease: "power4.inOut",
+    stagger: 1,
+    y: 50,
+})
